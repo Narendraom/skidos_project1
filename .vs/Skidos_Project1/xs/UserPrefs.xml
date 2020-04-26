@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{CBF17148-D021-7E26-E610-5F1B332B7D4B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RequestHandler.cs">
+    <Files>
+      <File FileName="Assets/Scripts/RequestHandler.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="98478e69-8334-4f9e-9fef-469c657bcfbd" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
