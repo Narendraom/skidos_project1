@@ -63,10 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Creator.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\ServerManagement\IResponse.cs" />
     <Compile Include="Assets\Scripts\ServerManagement\RequestHandler.cs" />
+    <Compile Include="Assets\Scripts\ServerRequestBehaviour.cs" />
+    <Compile Include="Assets\Scripts\SimpleJSON.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/user/Documents/Skidos_Project1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
