@@ -43,22 +43,10 @@ public class SaveScreen : MonoBehaviour
 #if UNITY_ANDROID
 
         
-        SavedData dataString = new SavedData();
-        dataString.key = _keyInputField.text;
-        dataString.value = _valueInputField.text;
-
-        string savedData = NativeBridge.RetreiveData();
-        SavedDataList savedList = new SavedDataList();
-        if (!PlayerPrefs.HasKey("key"))
-        {
-            savedList.savedData = new List<SavedData>();
-            PlayerPrefs.SetString("key", "key");
-        }else
-            savedList = JsonUtility.FromJson<SavedDataList>(savedData);
-
-        savedList.savedData.Add(dataString);
-        string jsondata = JsonUtility.ToJson(savedList);
-        NativeBridge.SaveData(jsondata);
+        string key = _keyInputField.text;
+        string value = _valueInputField.text;
+       
+        NativeBridge.SaveData(key, value);
 
         infoText.text = NativeBridge.RetreiveData();
         infoText.gameObject.SetActive(true);
