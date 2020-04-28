@@ -21,7 +21,7 @@ namespace ServerManagment
         /// </summary>
         public void RequestDataFromServer(ServerRequestBehaviour requestBehaviour)
         {
-            UnityWebRequest request = new UnityWebRequest(baseUrl, "Get");
+            UnityWebRequest request = new UnityWebRequest(baseUrl, "Get");// Post method giving error response
             request.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
             requestBehaviour.StartCoroutine(ServerResponse(request, requestBehaviour));
         }
